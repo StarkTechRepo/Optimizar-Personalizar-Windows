@@ -7,7 +7,6 @@
 - Configuraciones avanzadas del registro de Windows para afinar el rendimiento.
 - Herramientas para ajustar parámetros de hardware y software de manera inteligente.
 - Guías y tutoriales detallados sobre cómo optimizar tu sistema paso a paso.
-- Ajustes para mejorar la duración de la batería en dispositivos móviles.
 - Estrategias para reducir los tiempos de carga y mejorar la velocidad general.
 - Consejos para deshabilitar características innecesarias y liberar recursos valiosos.
 - Información sobre cómo evitar cuellos de botella y optimizar el uso de la CPU y la GPU.
