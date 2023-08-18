@@ -1,4 +1,6 @@
 @echo off
+chcp 65001 > nul
+color 0B
 title https://github.com/OtaconEvil
 REM -----------------------------------------------
 REM         Desactivación de Telemetría 
