@@ -1,4 +1,4 @@
-# Repositorio de Optimización y Mejora de Rendimiento para Sistemas
+#Optimización y Mejora de Rendimiento para Sistemas
 
 ¡Bienvenido al Repositorio de Optimización y Mejora de Rendimiento para Sistemas! Aquí encontrarás una colección de recursos, herramientas y ajustes que te permitirán llevar el rendimiento de tu sistema al siguiente nivel, ¡y lo mejor de todo es que es completamente gratuito!
 
