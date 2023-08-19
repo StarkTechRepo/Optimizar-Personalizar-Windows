@@ -26,37 +26,44 @@ for /f "tokens=*" %%A in ('powercfg /getactivescheme ^| find "Máximo rendimient
 )
 
 REM Mostrar opciones y permitir selección
+:menu
+cls
 echo.
 echo Opciones disponibles:
-echo  A - Cambiar a plan 'Alto Rendimiento'
-echo  M - Cambiar a plan 'Máximo Rendimiento'
-echo  E - Cambiar a plan 'Equilibrado'
-echo  S - Salir (sin realizar cambios)
-echo  T - Activar Turbo Boost y añadir entradas de registro
-echo  H - Desactivar hibernación
+echo  1 - Cambiar a plan 'Alto Rendimiento'
+echo  2 - Cambiar a plan 'Máximo Rendimiento'
+echo  3 - Cambiar a plan 'Equilibrado'
+echo  4 - Activar Turbo Boost y añadir entradas de registro
+echo  5 - Desactivar hibernación
+echo  6 - Salir
 
-choice /c AMESTHR /m "Selecciona una opción: "
+set /p option=Selecciona una opción: 
 
-if errorlevel 8 goto :hibernation
-if errorlevel 7 goto :turbo_boost_and_register
-if errorlevel 6 goto :turbo_boost_and_register
-if errorlevel 5 goto :end
-if errorlevel 4 (
-    powercfg /setactive 381b4222-f694-41f0-9685-ff5bb260df2e
-    echo.
-    echo ¡Plan de energía "Equilibrado" activado con éxito!
-    goto :apply
-) else if errorlevel 3 (
-    powercfg /setactive 54533251-82be-4824-96c1-47b60b740d00
-    echo.
-    echo ¡Plan de energía "Máximo Rendimiento" activado con éxito!
-    goto :apply
-) else if errorlevel 2 (
-    powercfg /setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-    echo.
-    echo ¡Plan de energía "Alto Rendimiento" activado con éxito!
-    goto :apply
-)
+if "%option%"=="1" goto high_performance
+if "%option%"=="2" goto max_performance
+if "%option%"=="3" goto balanced
+if "%option%"=="4" goto turbo_boost_and_register
+if "%option%"=="5" goto hibernation
+if "%option%"=="6" goto end
+goto invalid_option
+
+:high_performance
+powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+echo.
+echo ¡Plan de energía "Alto Rendimiento" activado con éxito!
+goto apply
+
+:max_performance
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+echo.
+echo ¡Plan de energía "Máximo Rendimiento" activado con éxito!
+goto apply
+
+:balanced
+powercfg -duplicatescheme 381b4222-f694-41f0-9685-ff5bb260df2e
+echo.
+echo ¡Plan de energía "Equilibrado" activado con éxito!
+goto apply
 
 :turbo_boost_and_register
 REM Activar Turbo Boost para el plan de energía actual en modo conectado (AC).
@@ -69,19 +76,28 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings
 
 echo.
 echo ¡Turbo Boost activado y entradas de registro añadidas para gestionar Turbo Boost!
-goto :apply
+goto apply
 
 :hibernation
 REM Desactivar hibernación.
 powercfg -h off
 echo.
 echo ¡Hibernación desactivada!
-goto :apply
+goto apply
 
 :apply
 REM Aplicar cambios en el plan de energía
 powercfg /s SCHEME_CURRENT
+echo.
+echo ¡Cambios aplicados con éxito!
+pause
+goto :menu
 
 :end
-echo.
+echo Hasta luego.
 pause
+exit
+
+:invalid_option
+echo Opción no válida. Por favor, selecciona una opción válida.
+goto :menu
