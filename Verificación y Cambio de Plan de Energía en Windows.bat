@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 > nul
-color 0B
+color 30
 title https://github.com/OtaconEvil
 
 REM Detectar si se ejecuta como administrador
