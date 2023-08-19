@@ -40,31 +40,132 @@ echo  7 - Salir
 
 set /p option=Selecciona una opción: 
 
+Aquí tienes el código completo con la opción "Ecomizador" agregada al menú:
+
+batch
+
+@echo off
+chcp 65001 > nul
+color 0B
+title https://github.com/OtaconEvil
+
+REM ... (código existente) ...
+
+:menu
+cls
+echo.
+echo Opciones disponibles:
+echo  1 - Cambiar a plan 'Alto Rendimiento'
+echo  2 - Cambiar a plan 'Máximo Rendimiento'
+echo  3 - Cambiar a plan 'Equilibrado'
+echo  4 - Cambiar a plan 'Ecomizador'
+echo  5 - Activar Turbo Boost y añadir entradas de registro
+echo  6 - Desactivar hibernación
+echo  7 - Abrir opciones de energía
+echo  8 - Salir
+
+set /p option=Selecciona una opción: 
+
 if "%option%"=="1" goto high_performance
 if "%option%"=="2" goto max_performance
 if "%option%"=="3" goto balanced
-if "%option%"=="4" goto turbo_boost_and_register
-if "%option%"=="5" goto hibernation
-if "%option%"=="6" goto open_power_options
-if "%option%"=="7" goto end
+if "%option%"=="4" goto power_saver
+if "%option%"=="5" goto turbo_boost_and_register
+if "%option%"=="6" goto hibernation
+if "%option%"=="7" goto open_power_options
+if "%option%"=="8" goto end
 goto invalid_option
 
 :high_performance
-powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-echo.
-echo ¡Plan de energía "Alto Rendimiento" activado con éxito!
+REM Verificar si el plan 'Alto Rendimiento' ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "Alto rendimiento"') do (
+    set "HighPerformance=%%A"
+)
+
+REM Verificar si el plan actual ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "%HighPerformance%"') do (
+    set "CurrentPlan=%%A"
+)
+
+REM Si el plan actual ya existe, usarlo; de lo contrario, crearlo
+if "%CurrentPlan%"=="" (
+    powercfg -duplicatescheme %HighPerformance%
+    echo.
+    echo ¡Plan de energía "%HighPerformance%" activado con éxito!
+) else (
+    powercfg /setactive %CurrentPlan%
+    echo.
+    echo ¡Plan de energía "%CurrentPlan%" activado con éxito!
+)
 goto apply
 
 :max_performance
-powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-echo.
-echo ¡Plan de energía "Máximo Rendimiento" activado con éxito!
+REM Verificar si el plan 'Máximo Rendimiento' ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "Máximo rendimiento"') do (
+    set "MaxPerformance=%%A"
+)
+
+REM Verificar si el plan actual ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "%MaxPerformance%"') do (
+    set "CurrentPlan=%%A"
+)
+
+REM Si el plan actual ya existe, usarlo; de lo contrario, crearlo
+if "%CurrentPlan%"=="" (
+    powercfg -duplicatescheme %MaxPerformance%
+    echo.
+    echo ¡Plan de energía "%MaxPerformance%" activado con éxito!
+) else (
+    powercfg /setactive %CurrentPlan%
+    echo.
+    echo ¡Plan de energía "%CurrentPlan%" activado con éxito!
+)
 goto apply
 
 :balanced
-powercfg -duplicatescheme 381b4222-f694-41f0-9685-ff5bb260df2e
-echo.
-echo ¡Plan de energía "Equilibrado" activado con éxito!
+REM Verificar si el plan 'Equilibrado' ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "Equilibrado"') do (
+    set "Balanced=%%A"
+)
+
+REM Verificar si el plan actual ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "%Balanced%"') do (
+    set "CurrentPlan=%%A"
+)
+
+REM Si el plan actual ya existe, usarlo; de lo contrario, crearlo
+if "%CurrentPlan%"=="" (
+    powercfg -duplicatescheme %Balanced%
+    echo.
+    echo ¡Plan de energía "%Balanced%" activado con éxito!
+) else (
+    powercfg /setactive %CurrentPlan%
+    echo.
+    echo ¡Plan de energía "%CurrentPlan%" activado con éxito!
+)
+goto apply
+
+:power_saver
+REM Verificar si el plan 'Ecomizador' ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "Ecomizador"') do (
+    set "PowerSaver=%%A"
+)
+
+REM Verificar si el plan actual ya existe
+for /f "tokens=*" %%A in ('powercfg /list ^| find "%PowerSaver%"') do (
+    set "CurrentPlan=%%A"
+)
+
+REM Si el plan actual ya existe, usarlo; de lo contrario, crearlo
+if "%CurrentPlan%"=="" (
+    powercfg -duplicatescheme %PowerSaver%
+    echo.
+    echo ¡Plan de energía "%PowerSaver%" activado con éxito!
+) else (
+    powercfg /setactive %CurrentPlan%
+    echo.
+    echo ¡Plan de energía "%CurrentPlan%" activado con éxito!
+)
 goto apply
 
 :turbo_boost_and_register
