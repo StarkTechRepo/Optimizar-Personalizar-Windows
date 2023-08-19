@@ -35,7 +35,8 @@ echo  2 - Cambiar a plan 'Máximo Rendimiento'
 echo  3 - Cambiar a plan 'Equilibrado'
 echo  4 - Activar Turbo Boost y añadir entradas de registro
 echo  5 - Desactivar hibernación
-echo  6 - Salir
+echo  6 - Abrir opciones de energía
+echo  7 - Salir
 
 set /p option=Selecciona una opción: 
 
@@ -44,7 +45,8 @@ if "%option%"=="2" goto max_performance
 if "%option%"=="3" goto balanced
 if "%option%"=="4" goto turbo_boost_and_register
 if "%option%"=="5" goto hibernation
-if "%option%"=="6" goto end
+if "%option%"=="6" goto open_power_options
+if "%option%"=="7" goto end
 goto invalid_option
 
 :high_performance
@@ -84,6 +86,12 @@ powercfg -h off
 echo.
 echo ¡Hibernación desactivada!
 goto apply
+
+:open_power_options
+echo Abriendo las opciones de energía...
+start powercfg.cpl
+pause
+goto menu
 
 :apply
 REM Aplicar cambios en el plan de energía
