@@ -64,7 +64,7 @@ if "%opcion%"=="4" (
 )
 
 if "%opcion%"=="5" (
-    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v CsEnabled /t REG_DWORD /d 0 /f
+
     echo Turbo Boost activado y entradas de registro añadidas.
     pause
     goto menu
