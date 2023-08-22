@@ -33,17 +33,17 @@ echo =============================
 set /p opcion=Selecciona una opción:
 
 if "%opcion%"=="1" (
-    control appwiz.cpl,,1
+    ms-settings:startupapps
     goto menu
 )
 
 if "%opcion%"=="2" (
-    control appwiz.cpl,,2
+    ms-settings:privacy-backgroundapps
     goto menu
 )
 
 if "%opcion%"=="3" (
-    control.exe access.cpl
+    ms-settings:easeofaccess-visualeffects
     goto menu
 )
 
