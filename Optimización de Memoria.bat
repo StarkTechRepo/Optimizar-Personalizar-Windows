@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 > nul
-title https://github.com/OtaconEvil
 color 30
+title https://github.com/OtaconEvil
 
 REM Detectar si se ejecuta como administrador
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
