@@ -2,18 +2,6 @@
 
 ¡Bienvenido al Repositorio de Optimización y Mejora de Rendimiento para Sistemas! Aquí encontrarás una colección de recursos, herramientas y ajustes que te permitirán llevar el rendimiento de tu sistema al siguiente nivel, ¡y lo mejor de todo es que es completamente gratuito!
 
-## Índice
-1. [Introducción](#introducción)
-2. [Configuraciones Avanzadas del Registro de Windows](#configuraciones-avanzadas-del-registro-de-windows)
-3. [Herramientas para Ajustar Parámetros de Hardware y Software](#herramientas-para-ajustar-parámetros-de-hardware-y-software)
-4. [Guías y Tutoriales Detallados](#guías-y-tutoriales-detallados)
-5. [Estrategias para Reducir los Tiempos de Carga](#estrategias-para-reducir-los-tiempos-de-carga)
-6. [Consejos para Deshabilitar Características Innecesarias](#consejos-para-deshabilitar-características-innecesarias)
-7. [Optimización del Uso de CPU y GPU](#optimización-del-uso-de-cpu-y-gpu)
-8. [Funciones Destacadas](#funciones-destacadas)
-9. [Licencia](#licencia)
-10. [Nota importante](#nota-importante)
-
 ¿Qué puedes encontrar aquí?
 
 - Configuraciones avanzadas del registro de Windows para afinar el rendimiento.
