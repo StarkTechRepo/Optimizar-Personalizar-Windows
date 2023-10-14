@@ -29,11 +29,7 @@ Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para ll
 
 - **Desactivar el Temporizador de Eventos de Alta Precisión (HPET):** Utiliza `bcdedit /deletevalue useplatformclock` para desactivar el temporizador de eventos de alta precisión, lo que puede mejorar la latencia en sistemas específicos.
 
-## Nota importante
-Se recomienda encarecidamente hacer una copia de seguridad de los datos importantes antes de continuar. El autor no se hace responsable de ningún daño o problema causado por el uso de estos comandos.
-
 ## Licencia
-
 Este proyecto está bajo la licencia [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Puedes compartir, adaptar y utilizar estos archivos siempre que des el crédito correspondiente al autor original.
 
 ### Nota importante
