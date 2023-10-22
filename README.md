@@ -14,12 +14,11 @@
 
 Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para llevar tu experiencia informática al siguiente nivel'. Ya seas un usuario ocasional o un profesional de la informática, encontrarás algo útil en este repositorio para potenciar tu sistema y disfrutar de un rendimiento excepcional.
 
-# Creación y Uso de Puntos de Restauración en Windows 10
-
-Un punto de restauración es una copia de seguridad del estado del sistema de Windows en un momento dado. Estos puntos son útiles para revertir el sistema a un estado anterior en caso de problemas.
+# Creación y Uso de Puntos de Restauración
+- Un punto de restauración es una copia de seguridad del estado del sistema de Windows en un momento dado. Estos puntos son útiles para revertir el sistema a un estado anterior en caso de problemas.
 
 # Crear un Punto de Restauración
-- Para generar un punto de restauración en Windows 10, sigue estos pasos:
+- Para generar un punto de restauración en Windows, sigue estos pasos:
 1. Abre la aplicación **Configuración**.
 2. Haz clic en **"Sistema"**.
 3. En la pestaña **"Protección del sistema"**, haz clic en **"Crear"**.
