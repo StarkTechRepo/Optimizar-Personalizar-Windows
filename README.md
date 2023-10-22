@@ -14,6 +14,33 @@
 
 Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para llevar tu experiencia informática al siguiente nivel'. Ya seas un usuario ocasional o un profesional de la informática, encontrarás algo útil en este repositorio para potenciar tu sistema y disfrutar de un rendimiento excepcional.
 
+# Creación y Uso de Puntos de Restauración en Windows 10
+
+Un punto de restauración es una copia de seguridad del estado del sistema de Windows en un momento dado. Estos puntos son útiles para revertir el sistema a un estado anterior en caso de problemas.
+
+# Crear un Punto de Restauración
+- Para generar un punto de restauración en Windows 10, sigue estos pasos:
+1. Abre la aplicación **Configuración**.
+2. Haz clic en **"Sistema"**.
+3. En la pestaña **"Protección del sistema"**, haz clic en **"Crear"**.
+4. Escribe un nombre descriptivo para el punto de restauración y haz clic en **"Crear"**.
+
+- Windows creará un punto de restauración en la unidad del sistema. El tamaño del punto de restauración dependerá de las modificaciones realizadas en el sistema desde el último punto de restauración.
+
+# Restaurar el Sistema a un Punto de Restauración
+-Si surge un problema con el sistema, puedes restaurarlo a un punto de restauración siguiendo estos pasos:
+1. Abre la aplicación **Configuración**.
+2. Haz clic en **"Sistema"**.
+3. En la pestaña **"Protección del sistema"**, haz clic en **"Restaurar sistema"**.
+4. Selecciona el punto de restauración al que deseas volver y haz clic en **"Siguiente"**.
+5. Sigue las instrucciones en pantalla para completar la restauración del sistema.
+
+# Cuándo Generar un Punto de Restauración
+- Es aconsejable generar un punto de restauración antes de realizar cambios significativos en el sistema, como la instalación de nuevas aplicaciones o controladores de hardware. También es prudente crear un punto de restauración antes de llevar a cabo actualizaciones de Windows.
+
+# Cantidad de Puntos de Restauración
+- No existe un número específico de puntos de restauración que debas generar. Sin embargo, es recomendable crear al menos un punto de restauración cada semana para contar con una variedad de opciones de restauración.
+
 # **Funciones Destacadas:**
 - **Habilitar TRIM (solo SSD):** Utiliza el comando ```fsutil behavior set disabledeletenotify 0``` para habilitar TRIM en unidades SSD y mantener su rendimiento a largo plazo.
 - **Verificar y Reparar Archivos del Sistema:** Ejecuta `sfc /scannow` para verificar y reparar archivos del sistema dañados o faltantes, manteniendo la integridad del sistema.
