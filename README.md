@@ -34,7 +34,7 @@ Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para ll
 4. Selecciona el punto de restauración al que deseas volver y haz clic en **"Siguiente"**.
 5. Sigue las instrucciones en pantalla para completar la restauración del sistema.
 
-# Cuándo Generar un Punto de Restauración
+# Cada cuanto crear un Punto de Restauración
 - Es aconsejable generar un punto de restauración antes de realizar cambios significativos en el sistema, como la instalación de nuevas aplicaciones o controladores de hardware. También es prudente crear un punto de restauración antes de llevar a cabo actualizaciones de Windows.
 
 # Cantidad de Puntos de Restauración
