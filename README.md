@@ -1,7 +1,7 @@
 # Optimización y Mejora de Rendimiento para Sistemas
 - ¡Bienvenido al Repositorio de Optimización y Mejora de Rendimiento para Sistemas! Aquí encontrarás una colección de recursos, herramientas y ajustes que te permitirán llevar el rendimiento de tu sistema al siguiente nivel, ¡y lo mejor de todo es que es completamente gratuito!
 
-# ¿Por qué hay que optimizar el hardware?
+# ¿Por qué hay que optimizar?
 - Hay que optimizar el hardware y software para mejorar su rendimiento y eficiencia. La optimización del hardware  y software puede ayudar a que los dispositivos funcionen más rápido, consuman menos energía y sean más duraderos.
 
 # ¿Qué puedes encontrar aquí?
