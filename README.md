@@ -12,7 +12,7 @@
 - Consejos para deshabilitar características innecesarias y liberar recursos valiosos.
 - Información sobre cómo evitar cuellos de botella y optimizar el uso de la CPU y la GPU.
 
-- Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para llevar tu experiencia informática al siguiente nivel'. Ya seas un usuario ocasional o un profesional de la informática, encontrarás algo útil en este repositorio para potenciar tu sistema y disfrutar de un rendimiento excepcional.
+Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para llevar tu experiencia informática al siguiente nivel'. Ya seas un usuario ocasional o un profesional de la informática, encontrarás algo útil en este repositorio para potenciar tu sistema y disfrutar de un rendimiento excepcional.
 
 # **Funciones Destacadas:**
 - **Habilitar TRIM (solo SSD):** Utiliza el comando ```fsutil behavior set disabledeletenotify 0``` para habilitar TRIM en unidades SSD y mantener su rendimiento a largo plazo.
