@@ -43,6 +43,35 @@ Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para ll
 # Cantidad de Puntos de Restauración
 - No existe un número específico de puntos de restauración que debas generar. Sin embargo, es recomendable crear al menos un punto de restauración cada semana para contar con una variedad de opciones de restauración.
 
+# Perfil XMP (Intel Extreme Memory Profile)
+El **Perfil XMP** (Intel Extreme Memory Profile) es una tecnología que permite que las memorias RAM DDR4 y DDR5 funcionen a sus velocidades y tiempos de latencia especificados por el fabricante. Por defecto, la memoria RAM funciona a velocidades más bajas para garantizar la compatibilidad con la placa base.
+
+## Cómo Activar el Perfil XMP
+Para activar el Perfil XMP, sigue estos pasos:
+
+1. Reinicia tu computadora y entra en la configuración de la BIOS.
+2. Accede a la sección de configuración de la memoria RAM.
+3. Busca la opción **"Perfiles XMP"** o **"Intel Extreme Memory Profile"**.
+4. Selecciona el perfil XMP que deseas activar.
+5. Guarda los cambios y reinicia tu computadora.
+
+Una vez que hayas activado el Perfil XMP, tu memoria RAM funcionará a sus velocidades y tiempos de latencia especificados por el fabricante. Esto puede mejorar el rendimiento de tu computadora en tareas que requieren un uso intensivo de la memoria RAM, como el juego o la edición de video.
+
+## Consejos para Activar el Perfil XMP
+- Antes de activar el Perfil XMP, es recomendable realizar una copia de seguridad de tu BIOS. Esto te permitirá restaurar tu BIOS a su configuración original si algo sale mal.
+- Si tienes problemas para activar el Perfil XMP, consulta el manual de tu placa base para obtener más información.
+- Algunos perfiles XMP pueden causar inestabilidad en tu sistema. Si experimentas problemas después de activar el Perfil XMP, intenta seleccionar un perfil diferente o desactivar el Perfil XMP.
+
+## Ventajas y Desventajas de Activar el Perfil XMP
+**Ventajas:**
+- Mejora el rendimiento de la memoria RAM.
+- Permite que la memoria RAM funcione a su velocidad y tiempos de latencia especificados por el fabricante.
+- Es una forma sencilla de mejorar el rendimiento de tu computadora.
+
+**Desventajas:**
+- Puede causar inestabilidad en el sistema.
+- No todos los perfiles XMP son compatibles con todas las placas base.
+
 # **Funciones Destacadas:**
 - **Habilitar TRIM (solo SSD):** Utiliza el comando ```fsutil behavior set disabledeletenotify 0``` para habilitar TRIM en unidades SSD y mantener su rendimiento a largo plazo.
 - **Verificar y Reparar Archivos del Sistema:** Ejecuta `sfc /scannow` para verificar y reparar archivos del sistema dañados o faltantes, manteniendo la integridad del sistema.
