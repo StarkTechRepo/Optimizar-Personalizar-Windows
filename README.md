@@ -61,16 +61,39 @@ Una vez que hayas activado el Perfil XMP, tu memoria RAM funcionará a sus veloc
 - Antes de activar el Perfil XMP, es recomendable realizar una copia de seguridad de tu BIOS. Esto te permitirá restaurar tu BIOS a su configuración original si algo sale mal.
 - Si tienes problemas para activar el Perfil XMP, consulta el manual de tu placa base para obtener más información.
 - Algunos perfiles XMP pueden causar inestabilidad en tu sistema. Si experimentas problemas después de activar el Perfil XMP, intenta seleccionar un perfil diferente o desactivar el Perfil XMP.
-
+- 
 ## Ventajas y Desventajas de Activar el Perfil XMP
 **Ventajas:**
 - Mejora el rendimiento de la memoria RAM.
 - Permite que la memoria RAM funcione a su velocidad y tiempos de latencia especificados por el fabricante.
 - Es una forma sencilla de mejorar el rendimiento de tu computadora.
-
 **Desventajas:**
 - Puede causar inestabilidad en el sistema.
 - No todos los perfiles XMP son compatibles con todas las placas base.
+
+# Activación de Resizable BAR (Nvidia y AMD)
+**Resizable BAR**, también conocido como *Re-Size BAR Support*, es una tecnología que permite que la CPU acceda a toda la memoria VRAM de la tarjeta gráfica a la vez. Por defecto, la CPU solo puede acceder a un segmento de 256 MB de la memoria VRAM a la vez.
+Al habilitar Resizable BAR, la CPU puede acceder a toda la memoria VRAM de la tarjeta gráfica a la vez. Esto puede mejorar el rendimiento en juegos y aplicaciones que utilizan una gran cantidad de memoria VRAM.
+
+## Beneficios de Resizable BAR
+- **Tiempo de carga:** Resizable BAR puede reducir el tiempo que tarda la CPU en cargar datos de la memoria VRAM.
+- **FPS:** Resizable BAR puede aumentar los FPS en juegos que utilizan una gran cantidad de memoria VRAM.
+- **Resolución:** Resizable BAR puede mejorar el rendimiento en juegos a resoluciones más altas.
+- **Texturas:** Resizable BAR puede mejorar la calidad de las texturas en juegos.
+
+## Requisitos para Resizable BAR
+Resizable BAR está disponible en las siguientes tarjetas gráficas y CPUs:
+- Tarjetas gráficas Nvidia: GeForce RTX 30 Series o superior.
+- CPUs AMD: Ryzen 5000 Series o superior.
+
+## Cómo Activar Resizable BAR
+Para habilitar Resizable BAR, sigue estos pasos:
+1. Asegúrate de tener una tarjeta gráfica o CPU compatible.
+2. Actualiza los drivers de tu tarjeta gráfica o CPU a la última versión.
+3. Actualiza el BIOS de tu placa base a la última versión.
+4. Reinicia tu computadora y entra en la configuración de la BIOS.
+5. Busca la opción **"Resizable BAR"** o **"Re-Size BAR Support"** y habilítala.
+6. Guarda los cambios y reinicia tu computadora.
 
 # **Funciones Destacadas:**
 - **Habilitar TRIM (solo SSD):** Utiliza el comando ```fsutil behavior set disabledeletenotify 0``` para habilitar TRIM en unidades SSD y mantener su rendimiento a largo plazo.
