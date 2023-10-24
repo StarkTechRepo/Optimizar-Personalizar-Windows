@@ -29,7 +29,7 @@ Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para ll
 # Creación y Uso de Puntos de Restauración
 - Un punto de restauración es una copia de seguridad del estado del sistema de Windows en un momento dado. Estos puntos son útiles para revertir el sistema a un estado anterior en caso de problemas.
 
-# Crear un Punto de Restauración
+## Crear un Punto de Restauración
 - Para generar un punto de restauración en Windows, sigue estos pasos:
 1. Abre la aplicación **Configuración**.
 2. Haz clic en **"Sistema"**.
@@ -38,7 +38,7 @@ Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para ll
 
 - Windows creará un punto de restauración en la unidad del sistema. El tamaño del punto de restauración dependerá de las modificaciones realizadas en el sistema desde el último punto de restauración.
 
-# Restaurar el Sistema a un Punto de Restauración
+## Restaurar el Sistema a un Punto de Restauración
 -Si surge un problema con el sistema, puedes restaurarlo a un punto de restauración siguiendo estos pasos:
 1. Abre la aplicación **Configuración**.
 2. Haz clic en **"Sistema"**.
@@ -46,10 +46,10 @@ Nuestro 'objetivo es proporcionarte todas las herramientas que necesitas para ll
 4. Selecciona el punto de restauración al que deseas volver y haz clic en **"Siguiente"**.
 5. Sigue las instrucciones en pantalla para completar la restauración del sistema.
 
-# Cada cuanto crear un Punto de Restauración
+## Cada cuanto crear un Punto de Restauración
 - Es aconsejable generar un punto de restauración antes de realizar cambios significativos en el sistema, como la instalación de nuevas aplicaciones o controladores de hardware. También es prudente crear un punto de restauración antes de llevar a cabo actualizaciones de Windows.
 
-# Cantidad de Puntos de Restauración
+## Cantidad de Puntos de Restauración
 - No existe un número específico de puntos de restauración que debas generar. Sin embargo, es recomendable crear al menos un punto de restauración cada semana para contar con una variedad de opciones de restauración.
 
 # Perfil XMP (Intel Extreme Memory Profile)
